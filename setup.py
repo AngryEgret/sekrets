@@ -25,7 +25,7 @@ setup(
     url='https://github.com/AngryEgret/sekrets',
     py_modules=['sekrets'],
     install_requires=requires,
-    test_requires = [
+    setup_requires = [
         'scripttest',
         'nose',
     ],
