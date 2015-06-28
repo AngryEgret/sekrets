@@ -2,12 +2,8 @@
 
 import os
 import re
-import sys
 
-try:
-    from setuptools import setup
-except ImportError:
-    from distutils.core import setup
+from setuptools import setup
 
 requires = [
     'Click==4.0',
@@ -28,11 +24,12 @@ setup(
     author_email='rgreget@gmail.com',
     url='https://github.com/AngryEgret/sekrets',
     py_modules=['sekrets'],
-    install_requires= requires,
+    install_requires=requires,
     test_requires = [
         'scripttest',
         'nose',
     ],
+    packages=['sekrets'],
     entry_points={
         'console_scripts': [
             'sekrets=sekrets.sekrets:cli',
