@@ -32,10 +32,11 @@ setup(
     test_requires = [
         'scripttest',
         'nose',
-    ]
-    entry_points='''
-        [console_scripts]
-        sekrets=sekrets.sekrets:cli
-    ''',
+    ],
+    entry_points={
+        'console_scripts': [
+            'sekrets=sekrets.sekrets:cli',
+        ]
+    },
     license='',
 )
