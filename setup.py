@@ -29,6 +29,10 @@ setup(
     url='https://github.com/AngryEgret/sekrets',
     py_modules=['sekrets'],
     install_requires= requires,
+    test_requires = [
+        'scripttest',
+        'nose',
+    ]
     entry_points='''
         [console_scripts]
         sekrets=sekrets.sekrets:cli
